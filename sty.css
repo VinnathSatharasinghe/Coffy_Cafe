@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik Wet Paint', sans-serif;
+    font-size: 18px;
+    
+    /* text-shadow: 1px 1px 1px navy; */
+}
+
+body  {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('gg.jpg') no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 120vh; /* box top */
+  
+  
+ }   
+
+
+header {
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo{
+    font-size: 2em;
+    user-select: none;
+        
+}
+
+.navigation{
+
+  align-items: center;
+  height: 60px;
+  justify-content: space-between;
+  border-radius: 90px 151px;
+  inset: 1px;
+  padding: 11px 10px;
+  display: flex;
+  box-shadow: 0 15px 25px black;
+  margin-left: 100px;
+  margin-bottom: 120px;
+
+}
+
+
+
+.navigation a::after{
+
+  content: '';
+  position:absolute;
+  left: 10;
+  bottom: 60px;
+  width: 3%;
+  height: 3px;
+  background: purple;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .1s;
+  
+
+}
+
+
+
+
+.navigation .btnLogin {
+
+    width: 90px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid;
+    border-radius: 116px;
+    cursor: pointer;
+    font-size: 0.8em;
+    color: black;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.7s;
+    
+
+}
+
+
+.navigation .btnLogin4 {
+
+  width: 90px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid;
+  border-radius: 116px;
+  cursor: pointer;
+  font-size: 0.8em;
+  color: purple;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: 0.7s;
+
+}
+
+.navigation .btnLogin5 {
+
+  width: 90px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid;
+  border-radius: 116px;
+  cursor: pointer;
+  font-size: 0.8em;
+  color: purple;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: 0.7s;
+
+}
+
+
+
+.navigation .btnLogin:hover {
+
+  background: lightgoldenrodyellow;
+  color: black;
+  
+}
+
+.navigation .btnLogin5:hover {
+
+  background: lightgoldenrodyellow;
+  color: black;
+  
+}
+
+
+.navigation .btnLogin4:hover {
+
+  background: lightgoldenrodyellow;
+  color: black;
+  
+}
+
+
+
+  /* Flickering animation */
+  @keyframes flicker {
+      
+    0%, 15%, 27%, 39%, 53%, 57%, 76%, 84%, 91% {
+  
+        text-shadow:
+        0 0 7px white,
+        0 0 10px pink,
+        0 0 21px white,
+        0 0 42px yellow,
+        0 0 82px lightcoral,
+        0 0 92px rgb(231, 255, 192),
+        0 0 102px lightgoldenrodyellow,
+        0 0 151px lightcyan;
+    
+    }
+    
+    20%, 24%, 55%, 75%, 88% {        
+        text-shadow: none;
+    }    
+  }
+
+
+.neonText1 {
+    color: black;
+    text-shadow:
+        0 0 7px white,
+        0 0 10px purple,
+        0 0 21px black,
+        0 0 42px yellow,
+        0 0 82px pink,
+        0 0 92px pink,
+        0 0 102px blue,
+        0 0 151px yellow;
+
+        text-transform: uppercase;
+        font-weight: 40;
+        font-style: italic;
+        text-align:right;
+
+        font-size: 4.2rem;
+        animation: flicker 1.5s infinite alternate; 
+  }
+
+  .neonText2 {
+    color: black;
+    text-shadow:
+        0 0 7px white,
+        0 0 10px purple,
+        0 0 21px black,
+        0 0 42px yellow,
+        0 0 82px pink,
+        0 0 92px pink,
+        0 0 102px blue,
+        0 0 151px yellow;
+
+        text-transform: uppercase;
+        font-weight: 40;
+        font-style: italic;
+        text-align:right;
+
+        font-size: 1.8rem;
+        position: left;
+        align-items: center;
+        animation: flicker 2.0s infinite alternate; 
+  
+  }
+  
+
+
+  .container{
+
+    height:200px;
+    font-weight:70px;
+    text-align: center;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+  }
+
+.wrapper{
+
+    position:relative;
+    width: 400px;
+    height:450px;
+    background: transparent;
+    /* border: 2px solid rgba(red, green, blue, alpha);  */
+
+    /* backdrop-filter: blur(10px); */
+    /* box-shadow: 0 0 30px rgba(69, 70, 21, 0.5);  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+  }
+
+ .form-box{
+
+    position: relative;
+    display: flex;
+    width: 450px;
+    height:470px;
+    z-index: 10;
+    border-radius: 50px 5px;
+    flex-direction: column;
+    padding: 60px 60px;
+    overflow: hidden;
+    text-transform: uppercase;
+    
+
+  }
+
+.log h2{
+
+    position: absolute;
+    text-transform: uppercase;
+    left: 164px;
+    bottom: 360px;
+    font-size:xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    background: fixed;
+    
+  }
+
+  form{
+
+
+    position:absolute;
+    z-index: 1;
+    border-radius: 90px 5px;
+    inset: 1px;
+    padding: 110px 27px;
+    display: flex;
+    flex-direction: column;
+    background: lightpink;
+  
+}
+
+
+
+  .form-box::before{
+
+    content: '';
+    position: absolute;
+    top: -80%;
+    left: -50%;
+    width: 580px;
+    height: 450px;
+    background: linear-gradient(0deg,transparent,rgb(242, 255, 0),rgb(16, 16, 16),yellow);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+  
+  }
+
+  .form-box::after{
+
+    content: '';
+    position: absolute;
+    top: -80%;
+    left: -50%;
+    width: 570px;
+    height: 450px;
+    background: linear-gradient(0deg,transparent,rgb(255, 4, 4),rgb(0, 0, 0),rgb(34, 255, 0));
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+    
+  }
+
+  
+
+  @keyframes animate {
+    
+    0%
+    {
+      transform: rotate(0deg);
+      
+      
+    }
+    100%
+    {
+      transform: rotate(360deg);
+    }
+
+  }
+  
+
+
+
+  .form-box .input-box{
+
+    position: relative;
+    width:100%;
+    height: 54px;
+    border-bottom: 2px solid;
+    margin: 6px;
+    box-shadow: none;
+    
+
+  }
+
+
+    
+  
+  .input-box label{
+
+    position: absolute;
+    height: 5px;
+    transform: translateY(-40%);
+    font-size: 1em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    pointer-events: none;
+    transition: .3s;
+    
+
+
+  }
+
+  /* .input-box input:focus~label,
+  .input-box input:valid~label{
+    top:-5px
+  } */
+
+  .input-box input{
+
+    position: absolute;
+    width: 100%;
+    height: 150%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 0.9em;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    
+
+    
+
+  }
+
+  .input-box .icon{
+
+    position: absolute;
+    right: 2px;
+    font-size: 0.1em;
+    color: black;
+    line-height: 50px;
+    background: fixed;
+
+  }
+
+  .input-box .btnLogin6{
+
+    width: 250px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid;
+    border-radius: 206px;
+    cursor: pointer;
+    font-size: 0.9em;
+    color: white;
+    margin-left: 45px; /* button center */
+    transition: 0.7s;
+    background-color: black;
+    text-transform: uppercase;
+    
+    
+
+  }
+
+
+
+  .input-box .btnLogin6:hover {
+
+    background: lightgoldenrodyellow;
+    color: black;
+   
+  }
+
+
+
+
