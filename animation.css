@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik Wet Paint', sans-serif;
+    font-size: 18px;
+
+    
+    /* text-shadow: 1px 1px 1px navy; */
+ }
+
+
+
+ 
+
+header{
+
+
+    width: 100%;
+    top: 0;
+    position: fixed;
+    padding: 20px 100px;
+    justify-content: space-between;
+    position:relative;
+    display: flex;
+ 
+    align-items: center;
+    background-attachment: fixed;
+    min-height: 10vh; /* box top */
+    background: linear-gradient(purple, lightcoral);
+    min-height: 10vh;
+    background-size: 100%;
+} 
+
+body  {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 10vh; /* box top */
+    background-color: blueviolet;
+    
+    
+   }  
+
+
+.midtext h2{
+
+    position: absolute;
+    text-transform: uppercase;
+    left: 275px;
+    bottom: 360px;
+    font-size:xx-large;
+    color: black;
+    background: fixed;
+    
+}
+
+#text{
+
+    background: peru;
+}
+
+.logo{
+    font-size: 2em;
+    user-select: none;
+        
+}
+
+.navigation{
+
+  align-items: center;
+  height: 60px;
+  justify-content: space-between;
+  border-radius: 90px 151px;
+  inset: 1px;
+  padding: 11px 10px;
+  display: flex;
+  box-shadow: 0 15px 25px black;
+  margin-left: 100px;
+  margin-bottom: 30px;
+
+}
+
+.navigation a::after{
+
+    content: '';
+    position:absolute;
+    left: 10;
+    bottom: 60px;
+    width: 3%;
+    height: 3px;
+    background: purple;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .1s;
+    
+  
+  }
+  
+  
+  
+  
+  .navigation .btnLogin {
+  
+      width: 90px;
+      height: 40px;
+      background: transparent;
+      border: 2px solid;
+      border-radius: 116px;
+      cursor: pointer;
+      font-size: 0.8em;
+      color: black;
+      font-weight: 500;
+      margin-left: 40px;
+      transition: 0.7s;
+      
+  
+  }
+  
+  
+  
+  
+  
+  .navigation .btnLogin:hover {
+  
+    background: lightgoldenrodyellow;
+    color: black;
+    
+  }
+  
+  
+  
+    /* Flickering animation */
+    @keyframes flicker {
+        
+      0%, 15%, 27%, 39%, 53%, 57%, 76%, 84%, 91% {
+    
+          text-shadow:
+          0 0 7px white,
+          0 0 10px pink,
+          0 0 21px white,
+          0 0 42px yellow,
+          0 0 82px lightcoral,
+          0 0 92px rgb(231, 255, 192),
+          0 0 102px lightgoldenrodyellow,
+          0 0 151px lightcyan;
+      
+      }
+      
+      20%, 24%, 55%, 75%, 88% {        
+          text-shadow: none;
+      }    
+    }
+  
+  
+  .neonText1 {
+      color: black;
+      text-shadow:
+          0 0 7px white,
+          0 0 10px purple,
+          0 0 21px black,
+          0 0 42px yellow,
+          0 0 82px pink,
+          0 0 92px pink,
+          0 0 102px blue,
+          0 0 151px yellow;
+  
+          text-transform: uppercase;
+          font-weight: 40;
+          font-style: italic;
+          text-align:right;
+  
+          font-size: 4.2rem;
+          animation: flicker 1.5s infinite alternate; 
+    }
+  
+    .neonText2 {
+      color: black;
+      text-shadow:
+          0 0 7px white,
+          0 0 10px purple,
+          0 0 21px black,
+          0 0 42px yellow,
+          0 0 82px pink,
+          0 0 92px pink,
+          0 0 102px blue,
+          0 0 151px yellow;
+  
+          text-transform: uppercase;
+          font-weight: 40;
+          font-style: italic;
+          text-align:right;
+  
+          font-size: 1.8rem;
+          position: left;
+          align-items: center;
+          animation: flicker 2.0s infinite alternate; 
+    
+    }

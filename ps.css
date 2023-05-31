@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    
+
+}
+
+body  {
+
+/* 
+    background: lightseagreen; */
+    background-color: #003329;
+    margin-top: 10px;
+    overflow-x: hidden;
+    font-family: 'Rubik Wet Paint', sans-serif;
+  
+    
+   }  
+
+   header{
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+
+   }
+
+   .navigation{
+
+    align-items: center;
+    height: 60px;
+    justify-content: space-between;
+    border-radius: 90px 151px;
+    inset: 1px;
+    padding: 11px 10px;
+    display: flex;
+    box-shadow: 0 15px 25px black;
+    margin-left: 500px;
+    margin-bottom: 10px;
+    
+  
+  }
+
+  .navigation a::after{
+
+    content: '';
+    position:absolute;
+    left: 10;
+    bottom: 60px;
+    width: 3%;
+    height: 3px;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .1s;
+    
+  
+  }
+  
+  .navigation .btnLogin {
+  
+      width: 90px;
+      height: 40px;
+      background: transparent;
+      border: 2px solid;
+      border-radius: 116px;
+      cursor: pointer;
+      font-size: 0.8em;
+      color: black;
+      font-weight: 500;
+      margin-left: 40px;
+      transition: 0.7s;
+      font-family: 'Rubik Wet Paint', sans-serif;
+
+
+      color: whitesmoke;
+      text-shadow:
+          0 0 7px green,
+          0 0 10px green,
+          0 0 21px black,
+          0 0 42px black,
+          0 0 82px black,
+          0 0 92px green,
+          0 0 102px greenyellow,
+          0 0 151px yellow;
+  
+  
+        
+          animation: flicker 8.5s infinite alternate-reverse; 
+      
+  
+  }
+  
+  
+  
+  .navigation .btnLogin:hover {
+  
+    background: lightgoldenrodyellow;
+    color: black;
+    
+  }
+
+
+    /* Flickering animation */
+    @keyframes flicker {
+      
+        0%, 15%, 27%, 39%, 53%, 57%, 76%, 84%, 91% {
+      
+            text-shadow:
+            0 0 7px white,
+            0 0 10px pink,
+            0 0 21px white,
+            0 0 42px yellow,
+            0 0 82px lightcoral,
+            0 0 92px rgb(231, 255, 192),
+            0 0 102px lightgoldenrodyellow,
+            0 0 151px lightcyan;
+        
+        }
+        
+        20%, 24%, 55%, 75%, 88% {        
+            text-shadow: none;
+        }    
+      }
+
+
+    
+    .neonText1 {
+        color: black;
+        text-shadow:
+            0 0 7px white,
+            0 0 10px purple,
+            0 0 21px black,
+            0 0 42px yellow,
+            0 0 82px pink,
+            0 0 92px pink,
+            0 0 102px blue,
+            0 0 151px yellow;
+    
+            text-transform: uppercase;
+            font-weight: 40;
+            font-style: italic;
+            text-align:right;
+    
+            font-size: 4.2rem;
+            animation: flicker 1.5s infinite alternate; 
+      }
+    
+      .neonText2 {
+        color: black;
+        text-shadow:
+            0 0 7px white,
+            0 0 10px purple,
+            0 0 21px black,
+            0 0 42px yellow,
+            0 0 82px pink,
+            0 0 92px pink,
+            0 0 102px blue,
+            0 0 151px yellow;
+    
+            text-transform: uppercase;
+            font-weight: 40;
+            font-style: italic;
+            text-align:right;
+    
+            font-size: 1.8rem;
+            position: left;
+            align-items: center;
+            animation: flicker 2.0s infinite alternate; 
+      
+      }
+
+  
+
+
+   .midtxt{
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+
+   }
+
+   #text{
+
+    position: absolute;
+    font-size: 5em;
+    color: white;
+    height:30vh;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+
+   }
+
+.midtxt img{
+
+    position: absolute;
+    /* bottom: 100px; */
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+
+}
+
+.sec {
+
+    position: relative;
+    background-color: #003329;
+    bottom: 100px;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sec h2{
+
+    font-size: 1cm;
+    color: azure;
+    margin-bottom: 20px;
+}
+
+
+.sec p{
+
+    font-size: 1em;
+    color: aliceblue;
+    font-weight: 300;
+}
+
+
+
+
+     
